@@ -23,7 +23,7 @@ namespace Model
             }
         }
         /// <summary>
-        /// Установления значения высоты
+        /// Установления значения и возврат высоты Параллелепипеда
         /// </summary>
         public double Heigth
         {
@@ -35,7 +35,7 @@ namespace Model
             }
         }
         /// <summary>
-        /// Установления значения длины
+        /// Установления значения и возврат длины Параллелепипеда
         /// </summary>
         public double Length
         {
@@ -51,17 +51,17 @@ namespace Model
         /// Начальные координаты, которые хранятся в классе Point
         /// </summary>
         public Point StartPoint { get; set; } = new Point();
-       
+
         /// <summary>
-        /// Рассчитывем площадь
+        /// Рассчитывем площадь Параллелепипеда
         /// </summary>
         public double GetArea()
         {
             return 2 * (_width * _length + _width * _height + _length * _height);
         }
-        
+
         /// <summary>
-        /// Рассчитывем объем
+        /// Рассчитывем объем Параллелепипеда
         /// </summary>
         public double GetVolume()
         {
