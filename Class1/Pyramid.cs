@@ -8,7 +8,7 @@ namespace Model
         double _h;
 
         /// <summary>
-        /// Установления значения стороны А
+        /// Установления значения и возврат стороны А 
         /// </summary>
         public double A
         {
@@ -20,7 +20,7 @@ namespace Model
             }
         }
         /// <summary>
-        /// Установления  значения высоты H
+        /// Установления  значения и возврат высоты H
         /// </summary>
         public double H
         {
