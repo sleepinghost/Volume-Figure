@@ -11,7 +11,7 @@ namespace Model
         double _height;
         double _length;
         /// <summary>
-        /// Установления значени ширины
+        /// Установления значения и возврат ширины Параллелепипеда
         /// </summary>
         public double Width
         {
