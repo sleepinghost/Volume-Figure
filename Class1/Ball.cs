@@ -8,7 +8,7 @@ namespace Model
         double _radius;
 
         /// <summary>
-        /// Установления значения Радиуса
+        /// Установления значения и возврат  Радиуса
         /// </summary>
         public double Radius
         {
