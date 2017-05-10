@@ -37,7 +37,7 @@ namespace Model
         /// </summary>
         public Point StartPoint { get; set; } = new Point();
         /// <summary>
-        /// Рассчитываем площадь
+        /// Рассчитываем площадь Пирамиды
         /// </summary>
         public double GetArea()
         {
@@ -45,7 +45,7 @@ namespace Model
         }
 
         /// <summary>
-        /// Рассчитываем объем
+        /// Рассчитываем объем Пирамиды
         /// </summary>
         /// <returns></returns>
         public double GetVolume()
