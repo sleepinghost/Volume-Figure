@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBoxDataFigures = new System.Windows.Forms.GroupBox();
             this.buttonSearch = new System.Windows.Forms.Button();
             this.buttonModify = new System.Windows.Forms.Button();
             this.buttonRemove_Figure = new System.Windows.Forms.Button();
@@ -56,61 +57,77 @@
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.groupBox1.Controls.Add(this.groupBoxDataFigures);
             this.groupBox1.Controls.Add(this.buttonSearch);
             this.groupBox1.Controls.Add(this.buttonModify);
             this.groupBox1.Controls.Add(this.buttonRemove_Figure);
             this.groupBox1.Controls.Add(this.buttonAdd_Figure);
             this.groupBox1.Controls.Add(this.dataGridViewFigures);
-            this.groupBox1.Location = new System.Drawing.Point(24, 45);
+            this.groupBox1.Location = new System.Drawing.Point(24, 46);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox1.Size = new System.Drawing.Size(957, 538);
+            this.groupBox1.Size = new System.Drawing.Size(999, 538);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "FiguresForm";
             // 
+            // groupBoxDataFigures
+            // 
+            this.groupBoxDataFigures.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.groupBoxDataFigures.Location = new System.Drawing.Point(564, 19);
+            this.groupBoxDataFigures.Name = "groupBoxDataFigures";
+            this.groupBoxDataFigures.Size = new System.Drawing.Size(429, 477);
+            this.groupBoxDataFigures.TabIndex = 5;
+            this.groupBoxDataFigures.TabStop = false;
+            this.groupBoxDataFigures.Text = "DataFigures";
+            // 
             // buttonSearch
             // 
             this.buttonSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonSearch.BackColor = System.Drawing.SystemColors.Info;
             this.buttonSearch.Location = new System.Drawing.Point(379, 505);
             this.buttonSearch.Name = "buttonSearch";
             this.buttonSearch.Size = new System.Drawing.Size(90, 23);
             this.buttonSearch.TabIndex = 4;
             this.buttonSearch.Text = "Search";
-            this.buttonSearch.UseVisualStyleBackColor = true;
+            this.buttonSearch.UseVisualStyleBackColor = false;
             this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
             // 
             // buttonModify
             // 
             this.buttonModify.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonModify.BackColor = System.Drawing.SystemColors.Info;
             this.buttonModify.Location = new System.Drawing.Point(245, 505);
             this.buttonModify.Name = "buttonModify";
             this.buttonModify.Size = new System.Drawing.Size(128, 23);
             this.buttonModify.TabIndex = 3;
             this.buttonModify.Text = "Modify";
-            this.buttonModify.UseVisualStyleBackColor = true;
+            this.buttonModify.UseVisualStyleBackColor = false;
             this.buttonModify.Click += new System.EventHandler(this.buttonModify_Click);
             // 
             // buttonRemove_Figure
             // 
             this.buttonRemove_Figure.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonRemove_Figure.BackColor = System.Drawing.SystemColors.Info;
             this.buttonRemove_Figure.Location = new System.Drawing.Point(128, 505);
             this.buttonRemove_Figure.Name = "buttonRemove_Figure";
             this.buttonRemove_Figure.Size = new System.Drawing.Size(111, 23);
             this.buttonRemove_Figure.TabIndex = 2;
             this.buttonRemove_Figure.Text = "Remove Figure";
-            this.buttonRemove_Figure.UseVisualStyleBackColor = true;
+            this.buttonRemove_Figure.UseVisualStyleBackColor = false;
             this.buttonRemove_Figure.Click += new System.EventHandler(this.buttonRemove_Figure_Click);
             // 
             // buttonAdd_Figure
             // 
             this.buttonAdd_Figure.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonAdd_Figure.BackColor = System.Drawing.SystemColors.Info;
             this.buttonAdd_Figure.Location = new System.Drawing.Point(6, 502);
             this.buttonAdd_Figure.Name = "buttonAdd_Figure";
             this.buttonAdd_Figure.Size = new System.Drawing.Size(116, 26);
             this.buttonAdd_Figure.TabIndex = 1;
             this.buttonAdd_Figure.Text = "Add Figure";
-            this.buttonAdd_Figure.UseVisualStyleBackColor = true;
+            this.buttonAdd_Figure.UseVisualStyleBackColor = false;
             this.buttonAdd_Figure.Click += new System.EventHandler(this.buttonAdd_Figure_Click);
             // 
             // dataGridViewFigures
@@ -120,6 +137,7 @@
             this.dataGridViewFigures.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewFigures.BackgroundColor = System.Drawing.Color.LemonChiffon;
             this.dataGridViewFigures.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewFigures.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnfigureName,
@@ -130,8 +148,9 @@
             this.dataGridViewFigures.Location = new System.Drawing.Point(6, 19);
             this.dataGridViewFigures.Name = "dataGridViewFigures";
             this.dataGridViewFigures.ReadOnly = true;
-            this.dataGridViewFigures.Size = new System.Drawing.Size(945, 477);
+            this.dataGridViewFigures.Size = new System.Drawing.Size(552, 477);
             this.dataGridViewFigures.TabIndex = 0;
+            this.dataGridViewFigures.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewFigures_CellClick);
             // 
             // ColumnfigureName
             // 
@@ -169,7 +188,7 @@
             this.toolStripFile});
             this.toolStrip.Location = new System.Drawing.Point(0, 0);
             this.toolStrip.Name = "toolStrip";
-            this.toolStrip.Size = new System.Drawing.Size(993, 25);
+            this.toolStrip.Size = new System.Drawing.Size(1035, 25);
             this.toolStrip.TabIndex = 1;
             this.toolStrip.Text = "Файл";
             // 
@@ -206,12 +225,14 @@
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            this.ClientSize = new System.Drawing.Size(993, 624);
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.ClientSize = new System.Drawing.Size(1035, 624);
             this.Controls.Add(this.toolStrip);
             this.Controls.Add(this.groupBox1);
             this.MinimumSize = new System.Drawing.Size(607, 250);
             this.Name = "MainForm";
-            this.Text = "Form1";
+            this.Text = "FiguresForm";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFigures)).EndInit();
             this.toolStrip.ResumeLayout(false);
@@ -240,6 +261,7 @@
         private System.Windows.Forms.ToolStripMenuItem сохранитьToolStripMenuItem;
         private System.Windows.Forms.SaveFileDialog saveFile;
         private System.Windows.Forms.OpenFileDialog openFile;
+        private System.Windows.Forms.GroupBox groupBoxDataFigures;
     }
 }
 
