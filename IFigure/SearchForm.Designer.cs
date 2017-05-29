@@ -36,6 +36,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.Info;
             this.groupBox1.Controls.Add(this.buttonSearch);
             this.groupBox1.Controls.Add(this.textBoxSearch);
             this.groupBox1.Location = new System.Drawing.Point(29, 26);
@@ -43,7 +44,7 @@
             this.groupBox1.Size = new System.Drawing.Size(361, 227);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "Search";
             // 
             // buttonSearch
             // 
@@ -67,6 +68,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(466, 321);
             this.Controls.Add(this.groupBox1);
             this.Name = "SearchForm";
